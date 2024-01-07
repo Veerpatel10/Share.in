@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#page {
+    height: 100%;
+    width: 100%;
+    background-color: #373737;
+}
+
+.close {
+    /* float: left; */
+    margin: 10px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+#myModal {
+    height: 40%;
+    width: 30%;
+    z-index: 2;
+    position: fixed;
+    background-color: black;
+    top: 20%;
+    left: 35%;
+    display: none;
+    /* border: 4px solid; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 57px 530px rgb(36 45 52 / 65%)
+}
+
+/* .model-content{
+
+} */
+
+.post-img-post-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img_upload {
+    width: 10%;
+    margin: 13px;
+    color: rgb(0, 163, 255);
+}
+
+.img_upload i {
+    font-size: 25px;
+}
+
+.post_message {
+    height: 125px;
+    width: 100%;
+}
+
+.post_message textarea {
+    height: 90%;
+    width: 94%;
+    margin: 12px;
+    padding: 0px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid black;
+    display: flex;
+    outline: none;
+    font-size: larger;
+    text-wrap: balance;
+    resize: none;
+}
+
+/* .post_message input[type=text]:focus{
+    border: 5px solid black;
+} */
+
+textarea:focus {
+    border: 2px solid #000;
+}
+
+
+.post_img {
+    width: 10%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin: 1px;
+    padding: 2px;
+}
+
+#chat-container {
+    margin: 0px auto;
+    width: 100%;
+    height: 98%;
+    background-color: #000;
+    /* padding: ; */
+}
+
+
+.header {
+    /* background-color: red; */
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    background: #000;
+    position: sticky;
+    top: 0px;
+}
+
+.right {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 4px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+}
+
+.left {
+    padding: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 4px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+}
+
+.right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#content {
+    /* height: 100%; */
+    width: 65%;
+    background-color: #000;
+    /* margin: 5px 10px;
+    padding: 2px 5px; */
+    border: 1px solid rgba(255, 255, 255, 0.259);
+}
+
+#sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #000;
+}
+
+#content::-webkit-scrollbar {
+    display: none;
+}
+
+#user_img {
+    width: 35px;
+    height: 35px;
+    /* background-color: red; */
+}
+
+.con-ti {
+    display: flex;
+    align-items: center;
+}
+
+.ac-name {
+    margin: 5px;
+}
+
+.sh-text {
+    margin: 5px;
+    padding: 4px;
+    font-size: 90%;
+    font-weight: 200;
+}
+
+/* .contents-shares{
+    height: 120%;
+} */
+
+.sh-img-share {
+    border: 1px solid whitesmoke;
+    margin: 2px 50px;
+    border-radius: 10px;
+}
+
+.shr-like-com {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgb(187, 187, 187);
+}
+
+.contents-shares {
+    /* border-bottom: 1px solid whitesmoke; */
+    margin: 10px 10px;
+    padding: 2px 5px;
+}
+
+.hr-line {
+    /* size: 0.5px; */
+    border-top: 1px solid rgba(255, 255, 255, 0.259);
+}
+
+;
+
+#lo-re {
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    /* background-color: red; */
+    height: 50%;
+    width: 80%;
+    margin: 100px auto;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.lo-ti {
+    /* background-color: red; */
+    margin: 10px 0px;
+    text-align: center;
+    font-size: x-large;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#account_manage {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 55px;
+    height: 100%;
+}
+
+.account_options ul li {
+    list-style: none;
+    margin: 40px 10px;
+    font-size: x-large;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
+
+.account_options ul li b {
+    margin: 0px 10px;
+}
+
+#post_share_1 {
+    width: 25%;
+    height: 40px;
+    margin: 6px;
+}
+
+.post_share {
+    /* background-color: red; */
+    height: 46px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-post {
+    width: 100%;
+    background: #00a3ff;
+    border-radius: 40px;
+    border: 5px;
+    font-size: x-large;
+    font-weight: 500;
+    color: #fff;
+}
+
+.account_name {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    /* background: red; */
+    /* margin: 97px 0px; */
+    margin-top: 125px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: larger;
+}
+
+.profile-image img {
+    height: 92%;
+}
+
+.user_name_id {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 426px) {
+    .header .left {
+        display: none;
+    }
+
+    #account_manage {
+        box-shadow: none;
+    }
+
+    /* #post-btn-1 {
+        display: none;
+    } */
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+    #myModal {
+        z-index: 3;
+        height: 38%;
+        width: 83%;
+        top: 20%;
+        left: 9%;
+    }
+
+    #post-btn-1 {
+        position: fixed;
+        height: 8%;
+        width: 14%;
+        background: #00a3ff;
+        top: 630px;
+        right: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid;
+        border-radius: 62px;
+    }
+
+    .header {
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    .header .right {
+        margin: 0px 20px;
+    }
+
+    .header .left {
+        margin: 0px 20px;
+    }
+
+    #chat-container {
+        width: 24rem;
+    }
+
+    .shr-like-com {
+        margin: 15px 5px;
+    }
+
+    #account_manage {
+        /* display: none; */
+        position: fixed;
+        background-color: #000;
+        width: 50%;
+        left: -225px;
+        transition: all ease-in-out 0.5s;
+        z-index: 2;
+        top: 52px;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    .sh-img-share {
+        margin: 5px auto;
+    }
+}
